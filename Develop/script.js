@@ -17,10 +17,36 @@ function generatePassword() {
     return 
   }
 
-  var passwordCase = parseInt(userInput)
+  var passwordUCase = window.confirm("Would you like your password to contain upper case letters?");
+  var passwordLCase = window.confirm("Would you like your password to contain lower case letters?"); 
+  var passwordSymbol = window.confirm("Would you like your password to contain special characters?");
+  var passwordNumber = window.confirm("Would you like your password to contain numbers?")
 
+  var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+  var symbols = ["!", "@", "#", "$", "&", "?", "^", "%", "*", "-", "_"]
+  var lowercase = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"] 
+  var uppercase = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Z", "X", "C", "V", "B", "N", "N", "M"]
   
+  
+  if (passwordUCase) {
+    uppercase
+  }
 
+  if (passwordLCase) {
+    lowercase
+  } 
+
+  if (passwordSymbol) {
+    symbols
+  }
+
+  if (passwordNumber) {
+    numbers
+  }
+
+var generatedPassword = "" 
+
+for (var i = 0; i <= passwordLength; i++)
 
 }
   
@@ -31,8 +57,6 @@ function generatePassword() {
   // 2. Validate input. 
   // 3. Generate password based on criteria. 
   
- // var chars = "1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!@#$%&?";
-  //var password = ""; 
 
   //for (var i = 0; i <= passwordLength; i++) {
     //var randomNumber = Math.floor(Math.random() * chars.length); 
