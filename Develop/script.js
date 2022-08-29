@@ -3,16 +3,16 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
   console.log("You clicked the button!"); //confirmation that button is clicked
-  window.prompt("How many characters do you want the password to be?");
+  var userInput = window.prompt("How many characters do you want the password to be?");
 
   var passwordLength = parseInt(userInput)
 
   if (isNaN(passwordLength)) {
     window.alert("Needs to be a number.")
-    return 
+    return
   }
 
-  if (passwordLength < 8 || passworldLength >128) {
+  if (passwordLength < 8 || passwordLength >128) {
     window.alert("Password length must be between 8 and 128 characters.")
     return 
   }
@@ -26,27 +26,35 @@ function generatePassword() {
   var symbols = ["!", "@", "#", "$", "&", "?", "^", "%", "*", "-", "_"]
   var lowercase = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"] 
   var uppercase = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Z", "X", "C", "V", "B", "N", "N", "M"]
+
+  var charList = []
   
+
   
   if (passwordUCase) {
-    uppercase
+    charList.push(uppercase)
   }
 
   if (passwordLCase) {
-    lowercase
+    charList.push(lowercase)
   } 
 
   if (passwordSymbol) {
-    symbols
+    charList.push(symbols)
   }
 
   if (passwordNumber) {
-    numbers
+    charList.push(numbers)
   }
 
 var generatedPassword = "" 
 
-for (var i = 0; i <= passwordLength; i++)
+for (var i = 0; i <= passwordLength; i++) {
+  var randomList= charList
+  var randomChar = Math.floor(Math.random(randomList))
+  console.log(randomChar)
+  
+}
 
 }
   
