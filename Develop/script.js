@@ -64,12 +64,7 @@ for (var i = 0; i <= passwordLength; i++) {
   //    b. uppercase, lowercase, numberic, and/or special characters
   // 2. Validate input. 
   // 3. Generate password based on criteria. 
-  
-
-
-
-
-  //4. return "Generated password here!"; 
+  // 4. return "Generated password here!"; 
 
 
 
