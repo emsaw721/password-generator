@@ -9,12 +9,12 @@ function generatePassword() {
 
   if (isNaN(passwordLength)) {
     window.alert("Needs to be a number.")
-    return
+    return generatePassword(); 
   }
 
   if (passwordLength < 8 || passwordLength >128) {
     window.alert("Password length must be between 8 and 128 characters.")
-    return 
+    return generatePassword(); 
   }
 
   var passwordUCase = window.confirm("Would you like your password to contain upper case letters?");
@@ -66,9 +66,6 @@ for (var i = 0; i <= passwordLength; i++) {
   // 3. Generate password based on criteria. 
   
 
-  //for (var i = 0; i <= passwordLength; i++) {
-    //var randomNumber = Math.floor(Math.random() * chars.length); 
-   // password += chars.substring(randomNumber, randomNumber +1); 
 
 
 
