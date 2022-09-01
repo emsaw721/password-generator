@@ -66,9 +66,9 @@ var generatedPassword = ""
 for (var i = 0; i <= passwordLength; i++) {
   var randomList= getRandomItem(charList); 
   var randomChar = getRandomItem(randomList); 
-  
+  generatedPassword += randomChar 
+  console.log(generatedPassword); 
 }
-  console.log(randomChar); 
   return generatedPassword; 
 }
   
