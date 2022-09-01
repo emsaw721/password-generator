@@ -2,7 +2,7 @@
 
 
 ## Description
-<a href="index.html"> Password generator </a> is an application that allows the user to generate a password based on the parameters given. 
+<a href="https://emsaw721.github.io/password-generator/"> Password generator </a> is an application that allows the user to generate a password based on the parameters given. 
 
 ## Usage
 The password generator provides a password with at least 8 characters, but up to 128 characters. These characters include uppercase and lowercase letters, numbers, and special characters.  
