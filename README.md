@@ -17,12 +17,13 @@ This will propt the app to ask how many characters the user wants their password
 
 Then the app will ask the user if they would like any of the four items listed: uppercase letters, lowercase letters, special characters, and numbers. 
 
-![Alt text](./Assets/secondprompt.png)
+![Alt text](./Assets/secondprompt.png);
 ![Alt text](./Assets/thirdprompt.png)
 ![Alt text](./Assets/fourthprompt.png)
 ![Alt text](./Assets/fifthprompt.png)
 
 Finally, the app will generate the password with the parameters the user indicated. 
+![Alt text](./Assets/genpass.png); 
 
 ## Roadmap
 Future iterations of this app will provide more special characters, prompts displayed in the website box instead of a popup, as well as some minor aesthetic changes. 
