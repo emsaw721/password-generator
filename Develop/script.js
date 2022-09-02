@@ -1,14 +1,14 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-function randomInt(min,max) {
-  if (!max) {
-    max = min 
-    min = 0
+function randomInt(x,y) {
+  if (!y) {
+    y = x
+    x = 0
   }
 
   var random = Math.random()
-  return Math.floor(min*(1 - random) + random*max)
+  return Math.floor(x*(1 - random) + random*y)
 }
 
 function getRandomItem(list) {
